@@ -66,8 +66,8 @@ body {
     background: #f9d423;
 }
 
-.style1::before { left: 20%; }
-.style1::after { right: 20%; }
+.style1::before { left: 5%; }
+.style1::after { right: 5%; }
 
 
 .menu-grid {
@@ -169,18 +169,17 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: clamp(11px, 3vw, 14px);
+    font-size: 14px;
     margin: 8px 0;
 }
-.contact-item span {
-    white-space: nowrap;
-}
+
 .contact-item i {
     color: #333;
     font-size: 16px;
 }
 .details{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
