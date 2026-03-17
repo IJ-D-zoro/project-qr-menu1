@@ -19,14 +19,7 @@ body {
     border-bottom-right-radius: 30px;
 }
 
-.hotel-symbol {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    border: 2px solid #5d4037;
-    display: inline-block;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-}
+
 
 .main-header h1 {
     font-family: 'Playfair Display', serif;
@@ -49,25 +42,6 @@ body {
 }
 
 
-.style1 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    position: relative;
-}
-
-.style1::before,
-.style1::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 2px;
-    background: #f9d423;
-}
-
-.style1::before { left: 5%; }
-.style1::after { right: 5%; }
 
 
 .menu-grid {
@@ -155,6 +129,10 @@ body {
     background: #ffdb58;
     padding: 25px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -177,12 +155,18 @@ body {
     color: #333;
     font-size: 16px;
 }
-.details{
+.style3 { 
+    font-size: 20px;
+    font-weight: 600;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
+    border-bottom: 3px solid transparent;
+    text-decoration: underline;
+    text-decoration-color: #f9d423;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    border-image-slice: 1; 
+    justify-content: center;
+    }
 @media (max-width: 350px) {
     .menu-grid {
         grid-template-columns: 1fr;
