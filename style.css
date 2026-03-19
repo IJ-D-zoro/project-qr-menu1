@@ -41,7 +41,17 @@ body {
     margin-bottom: 25px;
 }
 
+.dish-img {
+    height: 120px;
+    overflow: hidden;
+}
 
+.dish-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
 
 
 .menu-grid {
